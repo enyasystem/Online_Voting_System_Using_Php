@@ -33,6 +33,10 @@
                         <input class="form-control w-50 m-auto" type="password" 
                         placeholder="Confirm your password" required="required" name="password">
                     </div>
+                    <!-- <div class="mb-3">
+                        <input class="form-control w-50 m-auto" type="date" 
+                        placeholder="Date of Birth" required="required" name="date">
+                    </div> -->
                     <div class="mb-3">
                         <input class="form-control w-50 m-auto" type="file" 
                         placeholder="Select Image" required="required" name="photo">
