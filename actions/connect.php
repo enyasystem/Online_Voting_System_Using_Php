@@ -1,7 +1,9 @@
 <?php
 $con=mysqli_connect("localhost","root","enyaelvis","voting_system");
 if ($con) {
-    die (mysqli_error($con));
+    echo "Connection Successful";
+}else {
+die (mysqli_error($con));
 }
 
 // if($con){

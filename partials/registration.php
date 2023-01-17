@@ -16,7 +16,7 @@
         <div class="bg-info py-4">
             <h2 class="text-center">Register Account</h2>
             <div class="container text-center">
-                <form action="">
+                <form action="../actions/register.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <input class="form-control w-50 m-auto" type="text" 
                         placeholder="Enter your username" required="required" name="username">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="mb-3">
                         <input class="form-control w-50 m-auto" type="password" 
-                        placeholder="Confirm your password" required="required" name="password">
+                        placeholder="Confirm your password" required="required" name="cpassword">
                     </div>
                     <!-- <div class="mb-3">
                         <input class="form-control w-50 m-auto" type="date" 
