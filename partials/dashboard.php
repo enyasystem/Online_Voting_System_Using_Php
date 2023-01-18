@@ -1,3 +1,9 @@
+<?php
+session_start();
+$data=$_SESSION['data'];
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,7 +21,34 @@
         <div class="container my-5">
             <a href="../"><button class="btn btn-dark text-light px-3">Back</button></a>
             <a href="logout.php"><button class="btn btn-dark text-light px-3">Logout</button></a>
-            <h1>Voting System</h1>
+            <h1 class="my-3">Voting System</h1>
+            <div class="row my-5">
+                <div class="col-md-7">
+                <!-- Groups -->
+                    <div clas="row">
+                        <div class="col-md-4">
+                            <img scr="" alt="Group_image">
+                        </div>
+                        <div class="col-md-8">
+                            <strong class="text-dark h5">Group Name:</strong><br><br>
+                            <strong class="text-dark h5">Votes:</strong><br>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <!-- User Profile -->
+                    <img scr="" alt="User_Image">
+                    <br>
+                    <br>
+                    <strong class="text-dark h5">Name:</strong>
+                    <?php echo $data['username'] ;?> <br><br>
+                    <strong class="text-dark h5">Mobile:</strong>
+                    <?php echo $data['mobile'] ;?> <br><br>
+                    <strong class="text-dark h5">Status:</strong>
+                    <?php echo $data['status'] ;?> <br><br>
+                </div>
+            </div>
         </div>
     </body>
 </html>
