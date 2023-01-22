@@ -20,13 +20,13 @@
         <div class="contianer text-center">
             <form action="./actions/login.php" method="POST" enctype="multipart/form-data">
                 <div class="mb-3">
-                    <input type="text" class="form-control w-50 m-auto" name="username" auto-complete="of" placeholder="Enter your username" required="required"></input>
+                    <input type="text" class="form-control w-50 m-auto" name="username" auto-fill="off" placeholder="Enter your username" required="required"></input>
                 </div>
                 <div class="mb-3">
-                    <input type="text" class="form-control w-50 m-auto" name="mobile" auto-complete="of" placeholder="Enter your mobile" required="required" maxLength="11" minLength="11" ></input>
+                    <input type="text" class="form-control w-50 m-auto" name="mobile" auto-fill="off" placeholder="Enter your mobile" required="required" maxLength="11" minLength="11" ></input>
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control w-50 m-auto" name="password" auto-complete="of" placeholder="Enter your password" required="required" maxLength="11" minLength="3" ></input>
+                    <input type="password" class="form-control w-50 m-auto" name="password" auto-fill="off" placeholder="Enter your password" required="required" maxLength="11" minLength="3" ></input>
                 </div class="mb-3">
                 <div class="mb-3">
                     <select name="std" class="form-select w-50 m-auto">
@@ -34,7 +34,7 @@
                         <option value="voter">Voter</option>
                     </select>
                 </div>
-                <button type="Submit" class="btn btn-success my-4">Login</button>
+                <button type="Submit" class="btn btn-success my-4">Log In</button>
                 <p>Dont have an account?  <a href="./partials/registration.php" class="text-white"> Register here</a></p>
             </form>
         </div>

@@ -38,7 +38,7 @@ $data=$_SESSION['data'];
                 </div>
                 <div class="col-md-5">
                     <!-- User Profile -->
-                    <img scr="" alt="User_Image">
+                    <img src="../uploads/<?php echo $data['photo'] ;?>" alt="User_Image">
                     <br>
                     <br>
                     <strong class="text-dark h5">Name:</strong>
